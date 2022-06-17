@@ -4,83 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "keywords" comtent = "Бутаев, Арсен, Адилович, резюме">
-    <meta name ="description" content ="Это сайт с резюме Бутаева Арсена Адиловича">
+    <meta name = "keywords" comtent = "Бутаев, Арсен, резюме">
+    <meta name ="description" content ="Это сайт с резюме Бутаева Арсена">
+    <link rel="stylesheet" href="styles.css">
     <title>resume website</title>
+    
 </head>
 <body>
-    <img src="foto.jpg" width="200" alt="Здесь должно быть фото">
-    <h1>Арсен Бутаев</h1>
-    <p>Я начинающий программист. Моя первая цель освоить <strong>HTML</strong> и <strong>CSS</strong>.</p>
-    <p>Далее буду осваивать <strong>JavaScript</strong></p>
-    <p>Я хочу стать <em>специалистом высокого уровня</em>. <em>Программирование меня интересовало всегда</em>.</p>
-    <h4>Список социальных сетей:</h4>
-    <a href="https://vk.com/id20870057" target="_blank" >ВКонтакте</a>
-    |
-    <a href="" target="_blank">Telegram</a>
-    |
-    <a href="" target="_blank">Youtube</a>
+    <div class="container">
+        <div class="info">
+            <img src="foto.jpg" alt="Здесь должно быть фото" class="avatar">
+            <div class="info-text">
+                <h1>Арсен Бутаев</h1>
+                <p>Я начинающий программист. Моя первая цель освоить <strong>HTML</strong> и <strong>CSS</strong>.</p>
+                <p>Далее буду осваивать <strong>JavaScript</strong></p>
+                <p>Я хочу стать <em>специалистом высокого уровня</em>. <em>Программирование меня интересовало всегда</em>.</p>
 
-    <h2>Мои хобби:</h2>
-    <ol>
-        <li>Программирование</li>
-        <li>Фотоискуство</li>
-        <li>Электроника</li>
-        <li>Спорт</li>
-        <li>Философия</li>
-    </ol>
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Место работы</th>
-                <th>Должность</th>
-                <th>Период работы</th>
-            </tr>            
-        </thead>
-        <tbody>
-            <tr>
-                <td>Комиэнергомонтаж</td>
-                <td>Мастер</td>
-                <td>2000-2011</td>
-            </tr>
-            <tr>
-                <td>Монди СЛПК</td>
-                <td>Мастер</td>
-                <td>2011-2012</td>
-            </tr>
-            <tr>
-                <td>СНГ-Альянс</td>
-                <td>Начальник</td>
-                <td>2012-2017</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Связаться со сной</h2>
-
-    <form action="">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+                <h4>Список социальных сетей:</h4>
+                <a href="https://vk.com" target="_blank" >ВКонтакте</a>
+                |
+                <a href="#" target="_blank">Telegram</a>
+                |
+                <a href="#" target="_blank">Youtube</a>
+            </div>
         </div>
     
-        <div>
-            <label for="email">Ваш Email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card bg-yellow">
+    
+            <h2>Мои хобби:</h2>
+            <ol class="list">
+                <li>Программирование</li>
+                <li>Фотоискуство</li>
+                <li>Электроника</li>
+                <li>Спорт</li>
+                <li>Философия</li>
+            </ol>
         </div>
     
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Место работы</th>
+                        <th>Должность</th>
+                        <th>Период работы</th>
+                    </tr>            
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Комиэнергомонтаж</td>
+                        <td>Мастер</td>
+                        <td>2000-2011</td>
+                    </tr>
+                    <tr>
+                        <td>Монди СЛПК</td>
+                        <td>Мастер</td>
+                        <td>2011-2012</td>
+                    </tr>
+                    <tr>
+                        <td>СНГ-Альянс</td>
+                        <td>Начальник</td>
+                        <td>2012-2017</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     
-        <div>
-            <button type="submit">Отправить!</button>
+        <div class="card bg-green">
+            <h2>Мои курсы повышения квалификации</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="#">ВИК</a>
+                </li>
+                <li>
+                    <a href="#">УЗК</a>
+                </li>
+                <li>
+                    <a href="#">МПД</a>
+                </li>
+                <li>
+                    <a href="#">ПВК</a>
+                </li>
+                <li>
+                    <a href="#">РГК</a>
+                </li>
+            </ul>
         </div>
-    </form>
+    
+        
+    
+        <form action="/" class="form">
+            <h2>Связаться со сной</h2>
 
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+            
+                <div class="form-group">
+                    <label for="email">Ваш Email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+            
+        
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>                
+                <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+        
+            <div>
+                <button type="submit" class="btn">Отправить!</button>
+            </div>
+        </form>
+    
+    </div>
+    
     
 
 </body>
